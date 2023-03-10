@@ -1,0 +1,7 @@
+<div class="bg-onigiri-blue overflow-hidden align-center min-h-3rem">
+  <ng-container *ngIf="list_of_news.length > 0">
+    <div #elemtn class="w-max flex justify-between gap-20 animate-[tickerh_linear_15s_infinite] hover:pause-ticker-news">
+      <div *ngFor="let news of list_of_news" class="shrink-0 py-4 px-12 text-center"><a class="text-white" href="">{{news}}</a></div>
+    </div>
+  </ng-container>
+</div>

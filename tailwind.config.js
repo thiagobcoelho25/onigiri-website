@@ -14,8 +14,17 @@ module.exports = {
         'onigiri-blue': '#282a36',
         'blue-blue': 'rgb(0, 172, 255)'
       },
+      minHeight: {
+        '3rem': '3rem',
+      },
       boxShadow: {
         'shadow-navbar-item': "inset 200px 0 0 0 white",
+      },
+      keyframes: {
+        tickerh: {
+          '0%': { transform: 'translateX(100vw)' },
+          '100%': { transform: 'translateX(-100%)' },
+        }
       }
     },
   },
