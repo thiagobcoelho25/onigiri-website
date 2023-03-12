@@ -25,6 +25,12 @@ module.exports = {
           '0%': { transform: 'translateX(100vw)' },
           '100%': { transform: 'translateX(-100%)' },
         }
+      },
+      screens: {
+        'micro': '320px',
+        // => @media (min-width: 320px) { ... }
+
+
       }
     },
   },
