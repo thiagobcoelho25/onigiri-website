@@ -7,6 +7,7 @@ import { TickerNewsComponent } from './components/ticker-news/ticker-news.compon
 import { CarouselSliderComponent } from './components/carousel-slider/carousel-slider.component';
 import { SectionsThemeComponent } from './components/sections-theme/sections-theme.component';
 import { CategoryComponent } from './components/category/category.component';
+import { LastNewsComponent } from './components/last-news/last-news.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CategoryComponent } from './components/category/category.component';
     TickerNewsComponent,
     CarouselSliderComponent,
     SectionsThemeComponent,
-    CategoryComponent
+    CategoryComponent,
+    LastNewsComponent
   ],
   imports: [
     BrowserModule,

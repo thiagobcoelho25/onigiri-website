@@ -1,0 +1,31 @@
+<div class="bg-onigiri-blue flex justify-center mb-10">
+  <div class="max-w-[63rem] w-full px-2">
+    <div class="header-last-news border-b-2 border-solid border-sky-500">
+      <p class="bg-sky-500 inline-block py-0.5 px-2.5 text-white font-bold font-['Open_Sans']">
+        Últimas Notícias
+      </p>
+    </div>
+
+    <div class="container-last-news my-2 flex justify-around flex-wrap gap-x-2 gap-y-3">
+      <ng-container *ngFor="let last_news of list_last_news">
+      <!-- recalculate w + justify + align in breakpoits (+ or) change gap from parent to paddind to child -->
+      <div class="news w-60 relative">
+        <a href="">
+          <img class="h-[12rem] object-cover" [src]="last_news.url_post" alt="">
+        </a>
+        <div class="absolute bottom-0 left-0 pl-2 pb-2 w-full">
+          <h1 class="text-white font-bold font-['Open_Sans'] text-xl paragraph-tree-lines">{{last_news.title_post}}</h1>
+          <span class="flex gap-1 text-white items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <p class="text-xs">{{last_news.date_post}}</p>
+          </span>
+        </div>
+      </div>
+
+    </ng-container>
+    </div>
+  </div>
+</div>
