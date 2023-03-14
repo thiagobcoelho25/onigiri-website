@@ -8,6 +8,7 @@ import { CarouselSliderComponent } from './components/carousel-slider/carousel-s
 import { SectionsThemeComponent } from './components/sections-theme/sections-theme.component';
 import { CategoryComponent } from './components/category/category.component';
 import { LastNewsComponent } from './components/last-news/last-news.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LastNewsComponent } from './components/last-news/last-news.component';
     CarouselSliderComponent,
     SectionsThemeComponent,
     CategoryComponent,
-    LastNewsComponent
+    LastNewsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

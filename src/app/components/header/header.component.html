@@ -1,0 +1,76 @@
+<header class="bg-onigiri-blue py-4">
+
+  <div class="max-w-[100rem] mx-auto">
+    <div class="flex flex-col sm:flex-row gap-y-4 justify-between">
+      <a class="sm:w-32 justify-self-center self-center px-3" href="/">
+        <img src="assets/images/logotipo-white.png" alt="logo" />
+      </a>
+
+      <a class="justify-self-center self-center px-3" href="/">
+        <img src="assets/images/anuncio.png" alt="Anuncio" />
+      </a>
+    </div>
+  </div>
+
+</header>
+
+<!-- https://tailwind-elements.com/docs/standard/navigation/navbar/ -->
+<!-- transition get from https://css-tricks.com/css-link-hover-effects/ -->
+<nav class="relative flex w-full items-center justify-between bg-blue-blue py-4 sm:flex-wrap sm:justify-center" data-te-navbar-ref>
+
+  <div class="max-w-[100rem] mx-auto">
+
+    <div class="flex w-full flex-wrap items-center justify-center sm:justify-between px-6">
+
+      <button
+        class="block border-0 bg-transparent py-2 px-2.5 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 sm:hidden"
+        type="button" data-te-collapse-init data-te-target="#navbarSupportedContent3"
+        aria-controls="navbarSupportedContent3" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="[&>svg]:w-7">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
+            <path fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd" />
+          </svg>
+        </span>
+      </button>
+
+      <div class="!visible hidden flex-grow basis-[100%] items-center sm:!flex sm:basis-auto"
+        id="navbarSupportedContent3" data-te-collapse-item>
+
+        <!-- lg:flex-row -->
+        <ul class="list-style-none mr-auto flex flex-col pl-0 sm:flex-row" data-te-navbar-nav-ref>
+          <li class="px-2 text-center self-center border-white items-center" data-te-nav-item-ref>
+            <a class="text-base font-normal uppercase text-white hover:text-black hover:shadow-shadow-navbar-item transition ease-in-out duration-700"
+              aria-current="page" href="#" data-te-nav-link-ref>Notícias</a>
+          </li>
+          <li class="px-2 text-center self-center border-white items-center" data-te-nav-item-ref>
+            <a class="text-base font-normal uppercase text-white hover:text-black hover:shadow-shadow-navbar-item transition ease-in-out duration-700"
+              aria-current="page" href="#" data-te-nav-link-ref>Animes & HQ's</a>
+          </li>
+          <li class="px-2 text-center self-center border-white items-center" data-te-nav-item-ref>
+            <a class="text-base font-normal uppercase text-white hover:text-black hover:shadow-shadow-navbar-item transition ease-in-out duration-700"
+              href="#" data-te-nav-link-ref>Tecnologia</a>
+          </li>
+          <li class="px-2 text-center self-center border-white items-center" data-te-nav-item-ref>
+            <a class="text-base font-normal uppercase text-white hover:text-black hover:shadow-shadow-navbar-item transition ease-in-out duration-700"
+              href="#" data-te-nav-link-ref>CSGO ~ HLTV News</a>
+          </li>
+          <li class="px-2 text-center self-center border-white items-center" data-te-nav-item-ref>
+            <a class="text-base font-normal uppercase text-white hover:text-black hover:shadow-shadow-navbar-item transition ease-in-out duration-700"
+              href="#" data-te-nav-link-ref>OH: Arquivos</a>
+          </li>
+          <li class="px-2 text-center self-center border-white items-center" data-te-nav-link-ref>
+            <a
+              class="text-base font-normal uppercase text-white hover:text-black hover:shadow-shadow-navbar-item transition ease-in-out duration-700">Kalify
+              Inc</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+
+    </div>
+
+    <!-- Collapsible wrapper -->
+  </div>
+</nav>
