@@ -9,6 +9,7 @@ import { SectionsThemeComponent } from './components/sections-theme/sections-the
 import { CategoryComponent } from './components/category/category.component';
 import { LastNewsComponent } from './components/last-news/last-news.component';
 import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeaderComponent } from './components/header/header.component';
     SectionsThemeComponent,
     CategoryComponent,
     LastNewsComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
