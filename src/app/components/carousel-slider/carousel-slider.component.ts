@@ -1,5 +1,7 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import KeenSlider, { KeenSliderInstance } from "keen-slider"
+import { DataService } from 'src/app/services/data.service';
+import { Post } from 'src/app/shared/interfaces/post';
 
 @Component({
   selector: 'app-carousel-slider',
@@ -9,6 +11,16 @@ import KeenSlider, { KeenSliderInstance } from "keen-slider"
 export class CarouselSliderComponent {
   @ViewChild("sliderRef")
   sliderRef!: ElementRef<HTMLElement>;
+
+  list_carousel_itens: Post[] = []
+
+  constructor(private data_service: DataService){
+    this.data_service.getCarouselSliderNews().subscribe({next: value => {
+      this.list_carousel_itens = value;
+    }, error(err) {
+      console.log(err);
+    },})
+  }
 
   slider!: KeenSliderInstance;
 
