@@ -1,12 +1,12 @@
-import { AfterViewInit, Component, ElementRef, OnInit, Renderer2, ViewChild, ViewChildren } from '@angular/core';
-import { delay, Observable, of, take } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-ticker-news',
   templateUrl: './ticker-news.component.html',
   styleUrls: ['./ticker-news.component.css']
 })
-export class TickerNewsComponent implements OnInit, AfterViewInit {
+export class TickerNewsComponent implements OnInit {
   /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
   /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
   /* @keyframes tickerh {
@@ -22,24 +22,16 @@ export class TickerNewsComponent implements OnInit, AfterViewInit {
   list_of_news: string[] = []
   speed_of_news: number = 15
 
-  api_call: Observable<string[]> = of(
-    ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Aliquam consequat varius consequat.",
-      "Aliquam consequat varius consequat."]).pipe(delay(2000), take(1));
+  constructor(private data_service: DataService) {
 
-  constructor(private renderer: Renderer2) {
   }
 
   ngOnInit(): void {
-    this.api_call.subscribe({next: value => {
+    this.data_service.getTicketNews().subscribe({next: value => {
       this.list_of_news = value;
     },  error: err => {
-
+      console.log(err)
     }})
-    // this.list_of_news
-  }
-
-  ngAfterViewInit(): void {
   }
 
 }

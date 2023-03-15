@@ -11,6 +11,7 @@ import { LastNewsComponent } from './components/last-news/last-news.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { InfoNewsComponent } from './pages/info-news/info-news.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './components/footer/footer.component';
     LastNewsComponent,
     HeaderComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    InfoNewsComponent
   ],
   imports: [
     BrowserModule,
