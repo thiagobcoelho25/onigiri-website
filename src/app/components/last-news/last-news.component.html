@@ -12,7 +12,7 @@
       <div class="news w-60 relative">
         <a href="">
           <img class="h-[12rem] object-cover" [src]="last_news.url_post" alt="">
-        </a>
+
         <div class="absolute bottom-0 left-0 pl-2 pb-2 w-full">
           <h1 class="text-white font-bold font-['Open_Sans'] text-xl paragraph-tree-lines">{{last_news.title_post}}</h1>
           <span class="flex gap-1 text-white items-center">
@@ -23,6 +23,7 @@
             <p class="text-xs">{{last_news.date_post}}</p>
           </span>
         </div>
+      </a>
       </div>
 
     </ng-container>
