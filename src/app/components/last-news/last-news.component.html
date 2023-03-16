@@ -10,7 +10,7 @@
       <ng-container *ngFor="let last_news of list_last_news">
       <!-- recalculate w + justify + align in breakpoits (+ or) change gap from parent to paddind to child -->
       <div class="news w-60 relative">
-        <a href="">
+        <a [routerLink]="[last_news.id]">
           <img class="h-[12rem] object-cover" [src]="last_news.url_post" alt="">
 
         <div class="absolute bottom-0 left-0 pl-2 pb-2 w-full">

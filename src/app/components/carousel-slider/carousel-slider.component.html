@@ -14,14 +14,14 @@
             <span class="font-thin text-white font-['Open_Sans']">{{slider_news.date_post}}</span>
             <span class="text-white font-['Open_Sans']">-</span>
             <span>
-              <a href="" class="underline text-white font-['Open_Sans']">Thiago Ribeiro</a>
+              <a [routerLink]="[slider_news.id]" class="underline text-white font-['Open_Sans']">Thiago Ribeiro</a>
             </span>
           </div>
         </div>
 
         <!-- outside this slider: min-w-0 & break-words work as expected, need refatoration -->
         <div class="slider-texts flex flex-col gap-y-8">
-          <a href="" class="slider-title">
+          <a [routerLink]="[slider_news.id]" class="slider-title">
             <h1 class="word-break text-white font-bold my-3 text-base sm:text-5xl font-['Open_Sans'] sm:leading-[3rem]">
               {{slider_news.title_post}}</h1>
           </a>
@@ -32,7 +32,7 @@
         </div>
       </div>
       <!-- w-full h-full in a tag because of CHROME -->
-      <a href="" class="w-full h-full">
+      <a [routerLink]="[slider_news.id]" class="w-full h-full">
         <img class="brightness-50 w-full h-full object-cover" [src]="slider_news.url_post" alt="">
       </a>
     </div>
