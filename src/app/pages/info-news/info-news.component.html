@@ -1,1 +1,16 @@
-<p>info-news works!</p>
+<div class="h-[25rem] sm:h-[30rem] overflow-x-hidden border-t-[1px] border-solid border-white">
+  <a href="">
+    <img class="w-full h-full object-cover" [src]="post?.url_post" alt="">
+  </a>
+</div>
+
+
+<section class="my-12 flex justify-center text-white font-['Open_Sans']">
+  <div class="mx-auto max-w-[60rem]">
+  <p>{{post?.date_post}} | Thiago Ribeiro</p>
+  <h1 class="pt-1 font-bold text-4xl text-sky-500 font-['Open_Sans']">{{post?.title_post}}</h1>
+  <div class="mt-8">
+    {{post?.description_post}}
+  </div>
+</div>
+</section>
