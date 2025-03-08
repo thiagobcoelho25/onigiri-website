@@ -3,9 +3,10 @@ import { DataService } from 'src/app/services/data.service';
 import { Category } from 'src/app/shared/interfaces/category';
 
 @Component({
-  selector: 'app-sections-theme',
-  templateUrl: './sections-theme.component.html',
-  styleUrls: ['./sections-theme.component.css']
+    selector: 'app-sections-theme',
+    templateUrl: './sections-theme.component.html',
+    styleUrls: ['./sections-theme.component.css'],
+    standalone: false
 })
 export class SectionsThemeComponent {
 

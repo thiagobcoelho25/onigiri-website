@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
-  selector: 'app-ticker-news',
-  templateUrl: './ticker-news.component.html',
-  styleUrls: ['./ticker-news.component.css']
+    selector: 'app-ticker-news',
+    templateUrl: './ticker-news.component.html',
+    styleUrls: ['./ticker-news.component.css'],
+    standalone: false
 })
 export class TickerNewsComponent implements OnInit {
   /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */

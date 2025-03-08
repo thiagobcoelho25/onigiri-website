@@ -3,9 +3,10 @@ import { DataService } from 'src/app/services/data.service';
 import { Post } from 'src/app/shared/interfaces/post';
 
 @Component({
-  selector: 'app-last-news',
-  templateUrl: './last-news.component.html',
-  styleUrls: ['./last-news.component.css']
+    selector: 'app-last-news',
+    templateUrl: './last-news.component.html',
+    styleUrls: ['./last-news.component.css'],
+    standalone: false
 })
 export class LastNewsComponent {
 

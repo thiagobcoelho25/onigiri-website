@@ -4,9 +4,10 @@ import { DataService } from 'src/app/services/data.service';
 import { Post } from 'src/app/shared/interfaces/post';
 
 @Component({
-  selector: 'app-carousel-slider',
-  templateUrl: './carousel-slider.component.html',
-  styleUrls: ['./carousel-slider.component.css']
+    selector: 'app-carousel-slider',
+    templateUrl: './carousel-slider.component.html',
+    styleUrls: ['./carousel-slider.component.css'],
+    standalone: false
 })
 export class CarouselSliderComponent {
   @ViewChild("sliderRef")

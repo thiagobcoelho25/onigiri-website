@@ -5,9 +5,10 @@ import { DataService } from 'src/app/services/data.service';
 import { Post } from 'src/app/shared/interfaces/post';
 
 @Component({
-  selector: 'app-info-news',
-  templateUrl: './info-news.component.html',
-  styleUrls: ['./info-news.component.css']
+    selector: 'app-info-news',
+    templateUrl: './info-news.component.html',
+    styleUrls: ['./info-news.component.css'],
+    standalone: false
 })
 export class InfoNewsComponent {
 
