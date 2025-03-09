@@ -1,4 +1,7 @@
 # Refatoração OnigiriWebPage
+ 
+ <img src="./OnigiriWebPage.png"></img>
+ 
  Esse e um projeto pessoal que fiz para estudar tailwind, utilizei o [projeto incial](https://onigirihardcore.vercel.app) do grupo [kalify](https://kalify.vercel.app/#projects) para aplicar os components do tailwind, juntamente com resposividade para varios tipos de tela, algo que inicialmente não encontrei no site original.
 
 
