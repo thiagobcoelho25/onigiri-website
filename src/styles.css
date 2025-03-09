@@ -1,28 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap')
+layer(base);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap')
+layer(base);
 
-* {
-  padding: 0;
-  margin: 0;
-  vertical-align: baseline;
-  list-style: none;
-  box-sizing: border-box;
-  border: 0;
-  font-family: 'Poppins', sans-serif;
+@import 'tailwindcss';
+
+@plugin 'tw-elements/dist/plugin';
+
+@source '../node_modules/tw-elements/dist/js/**/*.js';
+
+@theme {
+  --width-32: 32rem;
+  --width-50: 50rem;
+
+  --color-onigiri-blue: #282a36;
+  --color-blue-blue: rgb(0, 172, 255);
+
+  --min-height-3rem: 3rem;
+
+  --shadow-shadow-navbar-item: inset 200px 0 0 0 white;
+
+  --breakpoint-micro: 320px;
+
+  @keyframes tickerh {
+    0% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+/* @layer utilities{
+  * {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+} */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@utility pause-ticker-news {
+  animation-play-state: paused;
+}
+
+@utility word-break {
+  /* needed to use deprecited argument, because overflow-wrap didnt work as expected in container i created for*/
+  word-break: break-word;
 }
 
 @layer utilities {
-  .pause-ticker-news {
-    animation-play-state: paused;
-  }
-
-  /* needed to use deprecited argument, because overflow-wrap didnt work as expected in container i created for*/
-  .word-break {
-    word-break: break-word;
+  * {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
   }
 }
 
